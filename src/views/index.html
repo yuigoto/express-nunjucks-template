@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  {# Async Hide #}
+
+  {# LocalStorage : Data Layer #}
+
+  {# Google Tag Manager #}
+
+  {# Stylesheets #}
+  {%- include "partials/styles.html" ignore missing -%}
+
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>{{ title or "Hello, World" }}</title>
+
+  {# Meta + Facebook Open Graph #}
+  {%- block head_meta -%}{%- endblock -%}
+
+  {# Header View Scripts + Styles #}
+  {%- block head -%}{%- endblock -%}
+</head>
+<body>
+  {%- include "partials/navbar.html" ignore missing -%}
+  {%- include "partials/header.html" ignore missing -%}
+
+  <div id="mainPage">
+    <main id="mainContents">
+      {# Page Content #}
+      {%- block content -%}{%- endblock -%}
+    </main>
+
+    {%- include "partials/footer.html" ignore missing -%}
+  </div>
+
+  {# Footer Scripts #}
+
+  {# Footer View Scripts #}
+  {%- block scripts -%}{%- endblock -%}
+
+  {# HTML Extra (Modais, etc.) #}
+  {%- include "partials/modals.html" ignore missing -%}
+</body>
+</html>

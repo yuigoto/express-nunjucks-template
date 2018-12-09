@@ -1,0 +1,11 @@
+{% extends "layout.njk" %}
+
+{% block content %}
+  {% if name %}
+    <h1>Acesso Negado, {{ name }}!</h1>
+    <h4>Ai, Bebê! Não pode! Já pro cercadinho!</h4>
+  {% else %}
+    <h1>Acesso Negado, Fofa!</h1>
+    <h4>Ai, Bebê! Não pode! Já pro cercadinho!</h4>
+  {% endif %}
+{% endblock %}

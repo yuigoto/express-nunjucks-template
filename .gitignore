@@ -1,0 +1,14 @@
+# IDE
+.idea/
+.vs/
+.vscode/
+
+# Files
+.env
+
+# Build and Lib
+build/
+node_modules/
+review/
+
+package-lock.json
