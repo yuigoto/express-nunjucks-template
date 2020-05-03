@@ -1,49 +1,25 @@
-Express + Nunjucks Template
-===========================
+# Express Nunjucks Template
 
 > _Um boilerplate para aplicações web para Node.js, usando Express e Nunjucks._
 
------
+----------------------------------------------------------------------
 
-How To
-------
+## Requisitos
 
-### Pré-Requisitos
 - [**Node.js**](https://nodejs.org) @ `^8.X`
   - _Recomendável versão `10.x` ou maior_
 - **Gulp CLI**: `npm install -g gulp-cli`
 
-### Passo-a-Passo
-- Clone o repositório
-- Instale as dependências com um `npm install` na pasta do repositório
-- Faça uma cópia do arquivo `.env.template` e renomeie para `.env` (ou apenas crie o arquivo diretamente), preencha com os seus dados e outros valores para disponibilizar durante a execução
-  - _Pode ser necessário modificar o `.gitignore` e o script de build/deploy para que o seu arquivo `.env` seja enviado ao servidor de produção_
-  - _Usuários de **Windows**: pode ser chato criar um arquivo assim no Explorer, por isso recomendo que o façam usando um editor de texto, como [**Notepad++**](https://notepad-plus-plus.org/) ou [**Visual Studio Code**](https://code.visualstudio.com/)_
-- Monte as suas rotas conforme os exemplos fornecidos em `/routes`, veja mais detalhes na [documentação do Express](http://expressjs.com/en/4x/api.html)
-- Coloque os seus templates em `/src/views`, assets em `/src/assets`, modifique o `gulpfile.js`, se necessário
+----------------------------------------------------------------------
 
-### Tarefas do Gulp
-
-Todas as tarefas seguem o padrão: `gulp [tarefa] --[argumento] [valor]`.
-
-**Tarefas disponíveis**:
-- `build` 
-- `start` 
-
-**Argumentos disponíveis**:
-- `--env`
-  - Aceita `dev`, `prod` ou `production` e `test`
-
------
-
-Dependências
-------------
+## Dependências
 
 Algumas dependências podem ser desnecessárias, dependendo da aplicação que está a construir. Remover e/ou adicionar dependências fica a seu critério.
 
 A maioria das dependências fora inclusa para facilitar o meu trabalho com alguns projetos que estou a desenvolver. :wink:
 
 ##### Dependências
+
 - _angular_ @ `^1.7.5`
 - _angular-animate_ @ `^1.7.5`
 - _angular-cookies_ @ `^1.7.5`
@@ -63,6 +39,7 @@ A maioria das dependências fora inclusa para facilitar o meu trabalho com algun
 - _request_ @ `^2.88.`
 
 ##### Dependências p/ Desenvolvimento
+
 - _del_ @ `^3.0.0`
 - _gulp_ @ `^4.0.0`
 - _gulp-autoprefixer_ @ `^6.0.0`
@@ -84,33 +61,64 @@ A maioria das dependências fora inclusa para facilitar o meu trabalho com algun
 - _minimist_ @ `^1.2.0`
 - _nodemon_ @ `^1.18.6`
 
------
+----------------------------------------------------------------------
 
-Estrutura
----------
+## Como Usar
 
-- `/src`
-  - `/assets`
-    - `/data`
-    - `/fonts`
-    - `/img`
-  - `/routes`
-  - `/views`
+- Clone o repositório
+- Instale as dependências com um `npm install` na pasta do repositório
+- Faça uma cópia do arquivo `.env.template` e renomeie para `.env` (ou apenas crie o arquivo diretamente), preencha com os seus dados e outros valores para disponibilizar durante a execução
+  - _Pode ser necessário modificar o `.gitignore` e o script de build/deploy para que o seu arquivo `.env` seja enviado ao servidor de produção_
+  - _Usuários de **Windows**: pode ser chato criar um arquivo assim no Explorer, por isso recomendo que o façam usando um editor de texto, como [**Notepad++**](https://notepad-plus-plus.org/) ou [**Visual Studio Code**](https://code.visualstudio.com/)_
+- Monte as suas rotas conforme os exemplos fornecidos em `/routes`, veja mais detalhes na [documentação do Express](http://expressjs.com/en/4x/api.html)
+- Coloque os seus templates em `/src/views`, assets em `/src/assets`, modifique o `gulpfile.js`, se necessário
 
------
+### Tarefas do Gulp
 
-Autores
--------
+Todas as tarefas seguem o padrão: `gulp [tarefa] --[argumento] [valor]`.
 
-Ver arquivo `AUTHORS.md`.
+**Tarefas disponíveis**:
+- `build` 
+- `start` 
 
------
+**Argumentos disponíveis**:
+- `--env`
+  - Aceita `dev`, `prod` ou `production` e `test`
 
-Licença
--------
+----------------------------------------------------------------------
 
-Este projeto foi publicado sob a `Licença MIT`. Para mais detalhes, veja o arquivo `LICENSE.md`.
+## Documentação
 
------
+Coloque link ou documentação diretamente aqui.
 
-_&copy; 2018 Fabio Y. Goto_
+----------------------------------------------------------------------
+
+## Estrutura
+
+Não é obrigatório, mas bom colocar em projetos muito extensos.
+
+```
+src
+|---> assets
+|---> data
+|---> fonts
+|---> img
+|---> routes
+|---> views
+```
+
+----------------------------------------------------------------------
+
+## Autores
+
+Veja `AUTHORS.md` para maiores informações.
+
+----------------------------------------------------------------------
+
+## Licença
+
+Este projeto está licenciado sob a `Licença MIT`. Veja o arquivo `LICENSE.md` para maiores detalhes sobre a licença (em inglês).
+
+----------------------------------------------------------------------
+
+_©2018-2020 Fabio Y. Goto_
